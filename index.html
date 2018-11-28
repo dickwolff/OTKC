@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OTKC: Offici&euml;le TimTim Kart Cup</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="styles/libs.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/component.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/custom.css" />
+    <link rel="stylesheet" type="text/css" href="styles/html5-skin.min.css" />
+
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script src="scripts/core.min.js"></script>
+    <script src="scripts/main_html5.min.js"></script>
+    <script src="scripts/html5-skin.min.js"></script>
+    <script src="scripts/bit_wrapper.min.js"></script>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <!-- Navigatie begin -->
+        <header class="site-header">
+            <div>
+                <div class="site-header-wrap">
+                    <div class="logo">
+                        <a href="#" class="logo-link main-logo">OTKC</a>
+                    </div>
+                    <div class="site-header-navigation">
+                        <nav class="navigation-component" role="navigation">
+                            <button class="navigation-toggle--nav" aria-label="Open main navigation">
+                                <span>Menu</span>
+                            </button>
+                            <div class="navigation-wrap">
+                                <div class="navigation-list-wrap">
+                                    <ul class="navigation-list--parent">
+                                        <li class="navigation-list-item--parent">
+                                            <a class="navigation-list-link--parent" href="#resultaten">Resultaten</a>
+                                        </li>
+                                        <li class="navigation-list-item--parent">
+                                            <a class="navigation-list-link--parent" href="#stand">Stand</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="searchbar">
+                                    <button class="navigation-toggle--search" aria-label="Open search">
+                                        <span class="search-msg">Open Search</span>
+                                    </button>
+                                    <div class="searchbar-form-wrap">
+                                        <form class="searchbar-form" action="/en/error/500.html" method="get" autocomplete="off">
+                                            <label class="srt" for="searchbar-form-input">Search term</label>
+                                            <input class="searchbar-form-input" id="searchbar-form-input" type="text" name="q" aria-label="Search term" placeholder="Search Formula1.com">
+                                            <input type="hidden" name="_charset_" value="UTF-8">
+                                            <button class="searchbar-form-submit" type="submit"></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- Navigatie einde -->
+    <!-- Carousel begin -->
+    <header class="page-header carousel-home">
+        <div class="carousel swipe align-to-body">
+            <div class="swiper-nudge-container swiper-container-horizontal">
+                <div class="swipe-wrap">
+                    <figure class="slide swiper-slide swiper-slide-duplicate swiper-slide-countdown-initialized swuper-slide-prev">
+                        <figure class="slide swiper-slide swiper-slide-active">
+                            <div class="slide-story slide-brandpromo altcolor-true">
+                                <div class="imagepanel">
+                                    <div class="fom-adaptive-image">
+                                        <img src="assets/otkc-ronde-1.jpg" class="image fom-image" />
+                                    </div>
+                                </div>
+                                <div class="textpanel">
+                                    <div class="textinner">
+                                        <h1>Arjan wint openingswedstrijd bij Coronel Kartracing</h1>
+                                        <p class="cta">
+                                            <a class="carousel-cta-link" href="#resultaten">Ga naar resultaten</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Carousel einde -->
+    <div role="main" class="template template-home">
+        <!-- Kalender begin -->
+        <div class="race-calendar component swiper-container-horizontal swiper-container-free-mode">
+            <div class="parallax"></div>
+            <div class="race-list">
+                <article class="race">
+                    <div class="country">
+                        <div class="flag">
+                            <img src="assets/coronel.svg" class="cq-dd-image" />
+                        </div>
+                        <span class="name">Coronel Kartracing</span>
+                    </div>
+                    <section class="race-details">
+                        <div class="animation-wrapper">
+                            <header>
+                                <h3 class="race-title">
+                                    <a>Grote Prijs van Huizen</a>
+                                </h3>
+                                <p class="race-date-full">
+                                    <time class="from date-full">
+                                        4 Jun 2018
+                                    </time>
+                                </p>
+                            </header>
+                            <div class="rolex-branding upper">Huizen </div>
+                            <ul class="race-time-list practice-times">
+                                <li>
+                                    <span class="race-type">Training</span>
+                                    <time class="day">Maa</time>
+                                    <span class="race-time">
+                                        <time class="clock-24">19:00</time>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="race-type">Kwalificatie</span>
+                                    <time class="day">Maa</time>
+                                    <span class="race-time">
+                                        <time class="clock-24">19:40</time>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="race-type">Race</span>
+                                    <time class="day">Maa</time>
+                                    <span class="race-time">
+                                        <time class="clock-24">20:10</time>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <span class="race-date-short">
+                        <time class="date">4</time>
+                        <time class="month">Jun</time>
+                    </span>
+                </article>
+                <article class="race">
+                    <div class="country">
+                        <div class="flag">
+                            <img src="assets/duiven.png" class="cq-dd-image" />
+                        </div>
+                        <span class="name">Kartbaan Duiven</span>
+                    </div>
+                    <section class="race-details">
+                        <div class="animation-wrapper">
+                            <header>
+                                <h3 class="race-title">
+                                    <a>Grote Prijs van Duiven</a>
+                                </h3>
+                                <p class="race-date-full">
+                                    <time class="from date-full">
+                                        28 Nov 2018
+                                    </time>
+                                </p>
+                            </header>
+                            <div class="rolex-branding upper">Duiven</div>
+                            <ul class="race-time-list practice-times">
+                                <li>
+                                    <span class="race-type">Training</span>
+                                    <time class="day">Wo</time>
+                                    <span class="race-time">
+                                        <time class="clock-24">18:29</time>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="race-type">Kwalificatie</span>
+                                    <time class="day">Wo</time>
+                                    <span class="race-time">
+                                        <time class="clock-24">19:00</time>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="race-type">Race</span>
+                                    <time class="day">Wo</time>
+                                    <span class="race-time">
+                                        <time class="clock-24">19:36</time>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <span class="race-date-short">
+                        <time class="date">28</time>
+                        <time class="month">Nov</time>
+                    </span>
+                </article>
+            </div>
+        </div>
+        <!-- Kalender einde -->
+        <!-- Resultaten begin -->
+        <div class="inner-wrap ResultArchiveWrapper" id="resultaten">
+            <div class="ResultArchiveContainer">
+                <div class="resultsarchive-wrapper">
+                    <div class="resultsarchive-content-header group">
+                        <p class="date">
+                            <span class="full-date">4 Jun 2018</span>
+                            <span class="circuit-info">Coronel Kartracing, Huizen</span>
+                        </p>
+                    </div>
+                    <div class="resultsarchive-content group">
+                        <div class="resultsarchive-col-left">
+                            <ul class="resultsarchive-side-nav">
+                                <li class="side-nav-item">Resultaten</li>
+                                <li class="side-nav-item">
+                                    <a class="side-nav-item-link ArchiveLink selected" id="menu-r2-race" onclick="resultShow('r2-race')">Race</a>
+                                </li>
+                                <li class="side-nav-item">
+                                    <a class="side-nav-item-link ArchiveLink" id="menu-r2-quali" onclick="resultShow('r2-quali')">Kwalificatie</a>
+                                </li>
+                                <li class="side-nav-item">
+                                    <a class="side-nav-item-link ArchiveLink" id="menu-r2-training" onclick="resultShow('r2-training')">Training</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="resultsarchive-col-right racereport active" id="r2-race">
+                            <table class="resultsarchive-table">
+                                <thead>
+                                    <tr>
+                                        <th class="limiter"></th>
+                                        <th>
+                                            <abbr title="Positie">Pos</abbr>
+                                        </th>
+                                        <th>Coureur</th>
+                                        <th>Rondes</th>
+                                        <th>
+                                            <abbr title="Tijd in minuten en seconden">Tijd</abbr>
+                                        </th>
+                                        <th>
+                                            <abbr title="Punten">Ptn</abbr>
+                                        </th>
+                                        <th class="limiter"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">1</td>
+                                        <td>
+                                            <a class="dark bold">Arjan</a>
+                                        </td>
+                                        <td class="dark bold">16</td>
+                                        <td class="dark bold">9:23.11</td>
+                                        <td class="dark bold">25</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">2</td>
+                                        <td>
+                                            <a class="dark bold">Youp</a>
+                                        </td>
+                                        <td class="dark bold">16</td>
+                                        <td class="dark bold">+15.26</td>
+                                        <td class="dark bold">18</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">3</td>
+                                        <td>
+                                            <a class="dark bold">Wilbert</a>
+                                        </td>
+                                        <td class="dark bold">16</td>
+                                        <td class="dark bold">+19.18</td>
+                                        <td class="dark bold">15</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">4</td>
+                                        <td>
+                                            <a class="dark bold">Dick</a>
+                                        </td>
+                                        <td class="dark bold">16</td>
+                                        <td class="dark bold">+26.37</td>
+                                        <td class="dark bold">12</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">5</td>
+                                        <td>
+                                            <a class="dark bold">Joery</a>
+                                        </td>
+                                        <td class="dark bold">16</td>
+                                        <td class="dark bold">+28.89</td>
+                                        <td class="dark bold">10</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">6</td>
+                                        <td>
+                                            <a class="dark bold">Theo</a>
+                                        </td>
+                                        <td class="dark bold">16</td>
+                                        <td class="dark bold">+33.89</td>
+                                        <td class="dark bold">8</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">7</td>
+                                        <td>
+                                            <a class="dark bold">Marc</a>
+                                        </td>
+                                        <td class="dark bold">15</td>
+                                        <td class="dark bold">+1 ronde</td>
+                                        <td class="dark bold">6</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">8</td>
+                                        <td>
+                                            <a class="dark bold">Juli&euml;n</a>
+                                        </td>
+                                        <td class="dark bold">15</td>
+                                        <td class="dark bold">+1 ronde</td>
+                                        <td class="dark bold">4</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">9</td>
+                                        <td>
+                                            <a class="dark bold">Alex</a>
+                                        </td>
+                                        <td class="dark bold">15</td>
+                                        <td class="dark bold">+1 ronde</td>
+                                        <td class="dark bold">2</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">10</td>
+                                        <td>
+                                            <a class="dark bold">Mike</a>
+                                        </td>
+                                        <td class="dark bold">15</td>
+                                        <td class="dark bold">+1 ronde</td>
+                                        <td class="dark bold">1</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">11</td>
+                                        <td>
+                                            <a class="dark bold">Tom</a>
+                                        </td>
+                                        <td class="dark bold">DNS</td>
+                                        <td class="dark bold"></td>
+                                        <td class="dark bold"></td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="resultsarchive-col-right racereport" id="r2-quali">
+                            <table class="resultsarchive-table">
+                                <thead>
+                                    <tr>
+                                        <th class="limiter"></th>
+                                        <th>
+                                            <abbr title="Positie">Pos</abbr>
+                                        </th>
+                                        <th>Coureur</th>
+                                        <th>
+                                            <abbr title="Tijd in seconden en milliseconden">Snelste ronde</abbr>
+                                        </th>
+                                        <th>Verschil</th>
+                                        <th>Rondes</th>
+                                        </th>
+                                        <th class="limiter"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">1</td>
+                                        <td>
+                                            <a class="dark bold">Arjan</a>
+                                        </td>
+                                        <td class="dark bold">34.97</td>
+                                        <td class="dark bold"></td>
+                                        <td class="dark bold">15</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">2</td>
+                                        <td>
+                                            <a class="dark bold">Youp</a>
+                                        </td>
+                                        <td class="dark bold">35.22</td>
+                                        <td class="dark bold">+0.25</td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">3</td>
+                                        <td>
+                                            <a class="dark bold">Wilbert</a>
+                                        </td>
+                                        <td class="dark bold">35.32</td>
+                                        <td class="dark bold">+0.35</td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">4</td>
+                                        <td>
+                                            <a class="dark bold">Dick</a>
+                                        </td>
+                                        <td class="dark bold">35.67</td>
+                                        <td class="dark bold">+0.70</td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">5</td>
+                                        <td>
+                                            <a class="dark bold">Marc</a>
+                                        </td>
+                                        <td class="dark bold">35.91</td>
+                                        <td class="dark bold">+0.94</td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">6</td>
+                                        <td>
+                                            <a class="dark bold">Theo</a>
+                                        </td>
+                                        <td class="dark bold">35.93</td>
+                                        <td class="dark bold">+0.96</td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">7</td>
+                                        <td>
+                                            <a class="dark bold">Juli&euml;n</a>
+                                        </td>
+                                        <td class="dark bold">36.20</td>
+                                        <td class="dark bold">+1.23</td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">8</td>
+                                        <td>
+                                            <a class="dark bold">Joery</a>
+                                        </td>
+                                        <td class="dark bold">36.56</td>
+                                        <td class="dark bold">+1.59</td>
+                                        <td class="dark bold">13</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">10</td>
+                                        <td>
+                                            <a class="dark bold">Mike</a>
+                                        </td>
+                                        <td class="dark bold">37.43</td>
+                                        <td class="dark bold">+2.46</td>
+                                        <td class="dark bold">13</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">10</td>
+                                        <td>
+                                            <a class="dark bold">Alex</a>
+                                        </td>
+                                        <td class="dark bold">38.61</td>
+                                        <td class="dark bold">+3.64</td>
+                                        <td class="dark bold">13</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">11</td>
+                                        <td>
+                                            <a class="dark bold">Tom</a>
+                                        </td>
+                                        <td class="dark bold">DNF</td>
+                                        <td class="dark bold"></td>
+                                        <td class="dark bold">3</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="resultsarchive-col-right racereport" id="r2-training">
+                            <table class="resultsarchive-table">
+                                <thead>
+                                    <tr>
+                                        <th class="limiter"></th>
+                                        <th>
+                                            <abbr title="Positie">Pos</abbr>
+                                        </th>
+                                        <th>Coureur</th>
+                                        <th>
+                                            <abbr title="Tijd in seconden en milliseconden">Snelste ronde</abbr>
+                                        </th>
+                                        <th>Verschil</th>
+                                        <th>Rondes</th>
+                                        </th>
+                                        <th class="limiter"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">1</td>
+                                        <td>
+                                            <a class="dark bold">Arjan</a>
+                                        </td>
+                                        <td class="dark bold">35.11</td>
+                                        <td class="dark bold"></td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">2</td>
+                                        <td>
+                                            <a class="dark bold">Youp</a>
+                                        </td>
+                                        <td class="dark bold">35.62</td>
+                                        <td class="dark bold">+0.51</td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">3</td>
+                                        <td>
+                                            <a class="dark bold">Wilbert</a>
+                                        </td>
+                                        <td class="dark bold">36.25</td>
+                                        <td class="dark bold">+1.14</td>
+                                        <td class="dark bold">14</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">4</td>
+                                        <td>
+                                            <a class="dark bold">Dick</a>
+                                        </td>
+                                        <td class="dark bold">36.41</td>
+                                        <td class="dark bold">+1.30</td>
+                                        <td class="dark bold">13</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">5</td>
+                                        <td>
+                                            <a class="dark bold">Marc</a>
+                                        </td>
+                                        <td class="dark bold">36.81</td>
+                                        <td class="dark bold">+1.70</td>
+                                        <td class="dark bold">13</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">6</td>
+                                        <td>
+                                            <a class="dark bold">Tom</a>
+                                        </td>
+                                        <td class="dark bold">37.47</td>
+                                        <td class="dark bold">+2.36</td>
+                                        <td class="dark bold">13</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">7</td>
+                                        <td>
+                                            <a class="dark bold">Joery</a>
+                                        </td>
+                                        <td class="dark bold">37.60</td>
+                                        <td class="dark bold">+2.49</td>
+                                        <td class="dark bold">13</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">8</td>
+                                        <td>
+                                            <a class="dark bold">Juli&euml;n</a>
+                                        </td>
+                                        <td class="dark bold">37.74</td>
+                                        <td class="dark bold">+2.63</td>
+                                        <td class="dark bold">12</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">10</td>
+                                        <td>
+                                            <a class="dark bold">Theo</a>
+                                        </td>
+                                        <td class="dark bold">38.07</td>
+                                        <td class="dark bold">+2.96</td>
+                                        <td class="dark bold">13</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">10</td>
+                                        <td>
+                                            <a class="dark bold">Mike</a>
+                                        </td>
+                                        <td class="dark bold">38.75</td>
+                                        <td class="dark bold">+3.64</td>
+                                        <td class="dark bold">12</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="limiter"></td>
+                                        <td class="dark">11</td>
+                                        <td>
+                                            <a class="dark bold">Alex</a>
+                                        </td>
+                                        <td class="dark bold">39.53</td>
+                                        <td class="dark bold">+4.42</td>
+                                        <td class="dark bold">12</td>
+                                        <td class="limiter"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Resultaten einde -->
+        <!-- Standings begin -->
+        <div class="inner-wrap resultsarchive-wrapper" id="stand">
+            <div class="resultsarchive-content-header">
+                <h1 class="ResultsArchiveTitle">Stand in het kampioensschap</h1>
+            </div>
+            <div class="resultsarchive-content">
+                <div class="table-wrap">
+                    <table class="resultsarchive-table">
+                        <thead>
+                            <tr>
+                                <th class="limiter"></th>
+                                <th>
+                                    <abbr title="Positie">Pos</abbr>
+                                </th>
+                                <th>Coureur</th>
+                                <th>
+                                    <abbr title="Punten">Ptn</abbr>
+                                </th>
+                                <th class="limiter"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">1</td>
+                                <td>
+                                    <a class="dark bold">Arjan</a>
+                                </td>
+                                <td class="dark bold">25</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">2</td>
+                                <td>
+                                    <a class="dark bold">Youp</a>
+                                </td>
+                                <td class="dark bold">18</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">3</td>
+                                <td>
+                                    <a class="dark bold">Wilbert</a>
+                                </td>
+                                <td class="dark bold">15</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">4</td>
+                                <td>
+                                    <a class="dark bold">Dick</a>
+                                </td>
+                                <td class="dark bold">12</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">5</td>
+                                <td>
+                                    <a class="dark bold">Joery</a>
+                                </td>
+                                <td class="dark bold">10</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">6</td>
+                                <td>
+                                    <a class="dark bold">Theo</a>
+                                </td>
+                                <td class="dark bold">8</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">7</td>
+                                <td>
+                                    <a class="dark bold">Marc</a>
+                                </td>
+                                <td class="dark bold">6</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">8</td>
+                                <td>
+                                    <a class="dark bold">Juli&euml;n</a>
+                                </td>
+                                <td class="dark bold">4</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">9</td>
+                                <td>
+                                    <a class="dark bold">Alex</a>
+                                </td>
+                                <td class="dark bold">2</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">10</td>
+                                <td>
+                                    <a class="dark bold">Mike</a>
+                                </td>
+                                <td class="dark bold">1</td>
+                                <td class="limiter"></td>
+                            </tr>
+                            <tr>
+                                <td class="limiter"></td>
+                                <td class="dark">11</td>
+                                <td>
+                                    <a class="dark bold">Tom</a>
+                                </td>
+                                <td class="dark bold">0</td>
+                                <td class="limiter"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Standings einde -->
+    </div>
+    </div>
+
+    <footer class="site-footer-redesign">
+        <div class="inner">
+            <div class="upper-wrapper">
+                <div class="wrapper-inner">
+                    <div class="calender-wrapper">
+                        <a href="http://dickwolff.nl" class="download-cal">Copyright &copy; 2018 - Dick Wolff</a>
+                    </div>
+                    <div class="social-media-table">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript imports -->
+    <script type="text/javascript" src="scripts/libs.min.js"></script>
+    <script type="text/javascript" src="scripts/libs.headscripts.min.js"></script>
+
+    <script>
+        function resultShow(divId) {
+            // Clear alle result pagina's van actief.
+            var otherResults = document.querySelectorAll(".racereport");
+
+            for (var idx = 0; idx < otherResults.length; idx++) {
+                var item = otherResults[idx];
+
+                $(item).removeClass("active");
+            }
+
+            // Markeer de huidige resultaat-div als actief.
+            $(`#${divId}`).addClass("active");
+
+            // Clear alle actieve menu's voor deze race.
+            var otherResulsMenu = document.querySelectorAll("[id^=menu-r]");
+            console.log(otherResulsMenu);
+            for (var idx = 0; idx < otherResulsMenu.length; idx++) {
+                var item = otherResulsMenu[idx];
+
+                $(item).removeClass("selected");
+            }
+
+            // Markeer het corresponderende menu-item als actief.
+            $(`#menu-${divId}`).addClass("selected");
+        }
+    </script>
+</body>
+
+</html>

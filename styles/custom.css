@@ -1,0 +1,49 @@
+
+.logo {
+    width: 138px;
+}
+
+.main-logo {
+    font-family: 'F1BoldRegular',Helvetica,sans-serif;
+    color: #fff;
+    font-size: 2rem;
+}
+
+    .main-logo:hover {
+        color: #9a9a9a;
+    }
+
+.race-calendar .country .flag {
+    height: 40px;
+    width: 100px;
+}
+
+.rolex-branding {
+    text-align: center;
+}
+
+.race-calendar .race-time-list.practice-times {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .race-calendar .race-time-list .race-type {
+        width: 50%;
+    }
+
+    .race-calendar .race-time-list .race-time {
+        width: 17%;
+    }
+
+.racereport {
+    display: none;
+}
+
+    .racereport.active {
+        display: block;
+    }
+
+    .resultsarchive-side-nav .side-nav-item-link.selected {
+        padding-left: 25px !important;
+    }

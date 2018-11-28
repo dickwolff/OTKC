@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Startup randomizer</title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'Roboto', sans-serif;
+				margin-top: 40px;
+			}
+			
+			.center {
+				width: 100%;
+				text-align: center;
+			}
+			
+			.ad {
+				width: 100%;
+				text-align: center;
+				margin-top: 30%;
+			}
+			
+			input[type=checkbox] {
+				margin-right: 5px;
+			}
+			label {
+				margin: 0 5px;
+			}
+			
+			#naam {
+				margin-top: 70px;
+				display: none;
+			}
+			
+				.visible {
+					display: block !important;
+				}			
+			
+			.btn {			
+				display: inline-block;
+				font-weight: 400;
+				text-align: center;
+				white-space: nowrap;
+				vertical-align: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				border: 1px solid transparent;
+				padding: .375rem .75rem;
+				font-size: 1rem;
+				line-height: 1.5;
+				border-radius: .25rem;
+				transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+			}
+			
+			.btn-secondary {
+				color: #fff;
+				background-color: #6c757d;
+				border-color: #6c757d;
+			}
+				.btn-secondary:hover, .btn-secondary:active {
+					background-color: #5a6268;
+					border-color: #5a6268;
+				}
+			
+			button:active { outline: none; }
+			button:focus { outline:0; }
+		</style>
+	</head>
+
+	<body onload="startApp()">
+	
+		<div class="center">
+			<h4>Aanwezig</h4>
+			<ul id="aanwezig"></ul>
+			<a class="btn btn-secondary" onclick="randomize()">Randomize</a>
+			<h1 id="naam"></h1>
+		</div>
+		
+		<div class="ad">
+			<h4>Nog <span id="dagenTotF1">n</span> dagen tot het nieuwe F1 seizoen!</h4>
+			<h4>Nog <span id="dagenTotMotoGp">n</span> dagen tot het nieuwe MotoGP seizoen!</h4>
+		</div>
+		
+		<script>		
+			var teamleden = ["Arjan", "Joery", "Wilbert", "Marc", "Julien", "Tim", "Dick", "Marion", "Youp", "Theo"];
+			var countDownDateF1 = new Date("2019-03-17");
+			var countDownDateMgp = new Date("2019-03-10");
+			
+			function startApp() {
+				vulUI();
+				tick();
+			}
+			
+			function vulUI() {
+			
+				var aanwezigUl = document.getElementById("aanwezig");
+				
+				for (var idx = 0; idx < teamleden.length; idx++) {
+					var teamlid = teamleden[idx];
+					
+					var span = document.createElement("span");
+					span.setAttribute("class", "label label-default");
+					
+					var cb = document.createElement("input");
+					cb.setAttribute("type", "checkbox");
+					cb.setAttribute("name", "aanwezig");
+					cb.setAttribute("value", teamlid);
+					cb.setAttribute("id", "cb-" + teamlid);
+					cb.checked = true;
+					
+					var cbl = document.createElement("label")
+					cbl.setAttribute("for", "cb-" + teamlid);					
+					cbl.innerText = teamlid;
+					
+					span.appendChild(cb);
+					span.appendChild(cbl);					
+					
+					aanwezigUl.appendChild(span);
+				}			
+			};
+			
+			function randomize() {
+				var aanwezigeTeamleden = getAanwezigTeamleden();
+											
+				var rand = getRandomBetween(0, aanwezigeTeamleden.length - 1);
+		
+				var naamEl = document.getElementById("naam");
+				
+				naamEl.innerText = "Vandaag wordt de standup gedaan door " + aanwezigeTeamleden[rand];
+				naamEl.classList.add("visible");
+			}
+			
+			function getAanwezigTeamleden() {
+				var checkedBoxes = document.querySelectorAll("input:checked");
+				var aanwezig = [];
+				
+				for (var idx = 0; idx < checkedBoxes.length; idx++) {
+					aanwezig.push(checkedBoxes[idx].value);
+				}
+				
+				return aanwezig;
+			}
+			
+			function getRandomBetween(min, max) {
+				return Math.floor(min + Math.random() * (max + 1 - min));
+			}
+		
+			function tick() {
+				var distanceF1 = countDownDateF1 - new Date();
+				var distanceMgp = countDownDateMgp - new Date();
+				
+				var daysF1 = Math.floor(distanceF1 / (1000 * 60 * 60 * 24));
+				var daysMgp = Math.floor(distanceMgp / (1000 * 60 * 60 * 24));
+				
+				var dagenTotF1 = document.getElementById("dagenTotF1");	
+				var dagenTotMotoGp = document.getElementById("dagenTotMotoGp");	
+				dagenTotF1.innerText = daysF1;
+				dagenTotMotoGp.innerText = daysMgp;
+				
+				if (distanceF1 <= 0) {
+					dagenTotF1.innerText = "0";
+				}
+				if (distanceMgp <= 0) {
+					dagenTotMotoGp.innerText = "0";
+				}
+			}
+		</script>
+	</body>
+</html>
