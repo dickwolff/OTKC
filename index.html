@@ -23,7 +23,7 @@
     <script src="scripts/bit_wrapper.min.js"></script>
 </head>
 
-<body>
+<body onload="loadData()">
     <div class="site-wrapper">
         <!-- Navigatie begin -->
         <header class="site-header">
@@ -1319,7 +1319,7 @@
             <div class="upper-wrapper">
                 <div class="wrapper-inner">
                     <div class="calender-wrapper">
-                        <a href="https://github.com/dickwolff/OTKC" class="download-cal">Copyright &copy; 2018 - Dick Wolff</a>
+                        <a href="https://github.com/dickwolff/OTKC" class="download-cal">Copyright &copy; <span id="cr-years">2018</span> &ndash; Dick Wolff</a>
                     </div>
                     <div class="social-media-table">
 
@@ -1359,6 +1359,22 @@
             // Markeer het corresponderende menu-item als actief.
             $(`#menu-${divId}`).addClass("selected");
         }
+		
+		function loadData() {
+			var yearFrom = 2018; // Het OTKC is gestart in 2018, dus tel vanaf dat moment.
+			var now = new Date();
+			
+			var yearsDisplay = yearFrom.toString();
+			
+			// Controleer of het huidige jaartal niet overeenkomt met het startjaar.
+			if (now.getFullYear() != yearFrom) {				
+				// Voeg het nieuwe jaartal toe aan het startjaar ("2018-2019").
+				yearsDisplay = yearsDisplay += "-" + now.getFullYear();
+			}
+			
+			// Zet de jaartal(len) in de HTML.
+			$("#cr-years").html(yearsDisplay);
+		}
     </script>
 </body>
 
