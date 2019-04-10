@@ -1,7 +1,7 @@
 # OTKC
 
 ## Deprecated
-Deze repository bevat de oude website van het OTKC. OTKC wordt nu gepowered door het [Trackr framework](http://trackrapp.net).
+OTKC wordt nu gehost middels het [Trackr framework](http://trackrapp.net). Deze repository is daarom outdated.
 
 ## Over
 
